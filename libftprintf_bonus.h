@@ -6,7 +6,7 @@
 /*   By: gomar <gomar@student.1337.ma>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 23:47:27 by gomar             #+#    #+#             */
-/*   Updated: 2025/11/03 20:15:59 by gomar            ###   ########.fr       */
+/*   Updated: 2025/11/09 23:48:22 by gomar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ typedef struct s_flags
 
 }					t_flags;
 
-/* In libftprintf.h */
-// A helper struct to pass padding values
 typedef struct s_pad
 {
 	int				zero;
@@ -41,7 +39,6 @@ typedef struct s_pad
 }					t_pad;
 
 int					ft_printf(const char *format, ...);
-// --- Your functions must be MODIFIED to accept the struct ---
 int					check_type(char index, va_list arg_po, t_flags *flags);
 int					print_char(int c, t_flags *flags);
 int					print_string(char *s, t_flags *flags);
